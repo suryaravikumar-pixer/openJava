@@ -4,6 +4,7 @@ public class ExceptionClass {
     public static void main(String[] args) {
 //        System.out.println(divideTwoNumbers(value1, value2));
         System.out.println(sumTwoNumbers(value1));
+        System.out.println(getRemainder(indhu,bun));
     }
    static int value1=100;
    static int value2=0;
@@ -25,9 +26,16 @@ public class ExceptionClass {
                  sum=sum+i;
         }
 
-
         return sum;
-    }
 
+    }
+   static int bun = 6;
+    static int indhu = 3;
+
+    static int getRemainder(int indhu, int bun) {
+         int remainder;
+         remainder = indhu % bun;
+      return remainder;
+     }
 
 }
