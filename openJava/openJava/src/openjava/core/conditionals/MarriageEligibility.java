@@ -2,8 +2,19 @@ package openjava.core.conditionals;
 
 public class MarriageEligibility {
     public static void main(String[] args) {
+        /******
+         * USA  0
+         * USA  18
+         * USA  20
+         * USA  40
+         * INDIA 0
+         * india 0
+         * usa 0
+         ******/
+
+
         // just for function calling
-        int age = 0;
+        int age = 22;
         String country = "USA";
         checkEligibility(country, age);
     }
@@ -42,6 +53,7 @@ public class MarriageEligibility {
       }
       catch (NullPointerException induraj){
           System.out.println(induraj);
+
       }
     }
 }
