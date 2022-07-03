@@ -18,8 +18,8 @@ public class SundayMethods {
 //        int headCount = 5;
 //        float heightOfRoom = 10.5f;
         class jj {
-            static String useFull = "x-data";
-            static String common = "Y-data";
+             String useFull = "x-data";
+             String common = "Y-data";
         }
 //        System.out.println(sundayGreetings(jj.common, jj.useFull));
         /***** calling sumOftwonumbsers******/

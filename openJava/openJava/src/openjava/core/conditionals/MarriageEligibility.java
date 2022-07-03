@@ -1,6 +1,17 @@
 package openjava.core.conditionals;
+//package openjava.core.conditionals;
 
 public class MarriageEligibility {
+    String country;
+    int age;
+    public MarriageEligibility() {
+    }
+
+    public MarriageEligibility(String country, int age) {
+        this.country = country;
+        this.age = age;
+    }
+
     public static void main(String[] args) {
         /******
          * USA  0
@@ -14,9 +25,7 @@ public class MarriageEligibility {
 
 
         // just for function calling
-        int age = 22;
-        String country = "USA";
-        checkEligibility(country, age);
+
     }
 
 
@@ -44,7 +53,7 @@ public class MarriageEligibility {
                   if (age < 18) {
                       System.out.println("not eligible less than 18 in usa");
                   } else if (age >= 18 && age < 21) {
-                      System.out.println("eligible between 18 and 21 ");
+                      System.out.println("eligible between 18 and 21 in usa ");
                   } else {
                       System.out.println(" eligible above 21 in usa");
                   }
