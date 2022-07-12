@@ -11,5 +11,6 @@ public class MilesToKmCalculater {
         System.out.println("enter no of miles :");
         m = sc.nextDouble();
         System.out.println(m + "miles = " +m*1.6+ "km");
+        System.out.println("rest of code");
         }
     }
