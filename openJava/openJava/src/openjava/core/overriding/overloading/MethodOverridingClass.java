@@ -1,8 +1,10 @@
 package openjava.core.overriding.overloading;
 /**Application class**/
-public class MethodOverriding {
+
+public class MethodOverridingClass {
     /**Parent class**/
     public class ParentAccount{
+        /***Overridden method**/
         public void account(){
             System.out.println(" Parent Account executed");
         }
@@ -14,10 +16,16 @@ public class MethodOverriding {
         }
     }
 
+    /** overriding method***/
     public class ChildTwo extends ParentAccount{
         public void account(){
             System.out.println(" Child TWO Account executed");
         }
     }
 
+
+    /****
+     * 1.final and static
+     * 2.constructor overriding is not allowed
+     * */
 }

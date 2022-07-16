@@ -1,4 +1,5 @@
-package openjava.core.overriding.overloading;
+//package openjava.core.overriding.overloading;
+package openjava.core.MethodOverLOadingOverriding;
 /**Application class**/
 public class MethodOverriding {
     /**Parent class**/

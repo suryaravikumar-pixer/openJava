@@ -1,10 +1,7 @@
-
-package openjava.core.overriding.overloading;
+package openjava.core.MethodOverLOadingOverriding;
 
 public class MethodOverloading {
-
-
-    /** Method overloading **/
+   /** Method overloading **/
     public static void account(){
         System.out.println(" Child ONE Account executed");
     }

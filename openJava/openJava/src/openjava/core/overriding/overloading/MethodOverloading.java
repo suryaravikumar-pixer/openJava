@@ -1,23 +1,8 @@
 package openjava.core.overriding.overloading;
 
-public class MethodOverloading {
+import openjava.core.MethodOverLOadingOverriding.MethodOverloading;
 
-
-    /** Method overloading **/
-    public static void account(){
-        System.out.println(" Child ONE Account executed");
-    }
-    public static void account(String accountName){
-        System.out.println(" Child ONE Account executed");
-    }
-    public static void account(int ifscCode){
-        System.out.println(" Child ONE Account executed");
-    }
-    public static void account(int num, int balance){
-        System.out.println(" Parent  Account executed");
-    }
-}
-class CanWeDoOverLoadingFromAnotherClass extends MethodOverloading{
+class CanWeDoOverLoadingFromAnotherClass extends MethodOverloading {
 
     public static void account(int ifscCode, int address){
         System.out.println(" Child  Account executed");
