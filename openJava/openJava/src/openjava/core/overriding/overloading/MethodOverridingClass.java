@@ -28,4 +28,9 @@ public class MethodOverridingClass {
      * 1.final and static
      * 2.constructor overriding is not allowed
      * */
+
+    public static void main(String[] args) {
+//        ChildOne cOne = new ChildOne();
+//        cOne.account();
+    }
 }
