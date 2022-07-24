@@ -22,6 +22,13 @@ public class MethodOverridingClass {
             System.out.println(" Child TWO Account executed");
         }
     }
+    public class ChildThree extends ParentAccount{
+        public void account(){
+            System.out.println(" Child THREE Account executed");
+        }
+    }
+
+
 
 
     /****
