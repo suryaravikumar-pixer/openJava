@@ -2,7 +2,7 @@ package openjava.core.overriding.overloading;
 
 public class RunMethodOverriding {
     public static void main(String[] args) {
-        GrandParent grandParent = new Child();
+        Child grandParent = new Child();
         grandParent.arithmetic(100,10);
     }
 }
@@ -23,7 +23,7 @@ class Parent extends GrandParent{
     }
 }
 
-class Child extends Parent{
+class Child extends GrandParent{
     @Override
     void arithmetic(int value1, int value2){
         int result = value1 * value2;

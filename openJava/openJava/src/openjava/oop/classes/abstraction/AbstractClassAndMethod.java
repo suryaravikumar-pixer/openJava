@@ -1,15 +1,11 @@
 package openjava.oop.classes.abstraction;
 
-public class AbstractClassAndMethod{
+public class AbstractClassAndMethod {
 //Atm bank=new Atm();
-public static void main(String[] args) {
-   Hdfc hdfc=new Hdfc(2000,"aram-gar","Hdfc aram-gar");
-   Hdfc hdfc1=new Hdfc();
-   hdfc1.voiceAssistant();
 
 }
-}
-abstract class Atm{
+
+abstract class Atm {
     int atmNumber;
     String atmAddress;
     String atmClient;
@@ -23,31 +19,65 @@ abstract class Atm{
     public Atm() {
     }
 
-    static  void  atmCapacity(){
+    static void atmCapacity() {
         System.out.println("atmCapacity is 10,00,000");
     }
-    final void atmMessage(){
+
+    final void atmMessage() {
         System.out.println("Thank You. Visit Again");
     }
+
     abstract void voiceAssistant();
-void greeting(){System.out.println("Welcome to ATM");}
+
+    void greeting() {
+        System.out.println("Welcome to ATM");
+    }
+
 
 }
-class Hdfc extends Atm{
 
+class Hdfc extends Atm {
+    boolean covid_free;
 
-    public Hdfc(int atmNumber, String atmAddress, String atmClient) {
+    public Hdfc(int atmNumber, String atmAddress, String atmClient, boolean covid_free) {
         super(atmNumber, atmAddress, atmClient);
+        this.covid_free = covid_free;
     }
-
     public Hdfc() {
     }
-
     @Override
     void voiceAssistant() {
         System.out.println("Welcome to Hdfc");
 
     }
-    Hdfc hdfc=new Hdfc(5000,"bhavani colony","Hdfc Aram-gar");
+    public static void main(String[] args) {
+//        Atm atm = new Atm();
+
+        Hdfc hdfc = new Hdfc(2000,"aram-gar","Hdfc aram-gar",true);
+        Hdfc hdfc1=new Hdfc();
+        hdfc.voiceAssistant();
+
+        EastWestBank eastWestBank = new EastWestBank();
+        eastWestBank.voiceAssistant();
+
+        BankOfBoroda bankOfBoroda = new BankOfBoroda();
+        bankOfBoroda.voiceAssistant();
+
+    }
+
+
 }
 
+class EastWestBank extends Atm{
+    @Override
+    void voiceAssistant() {
+        System.out.println("Welcome East West Bank");
+    }
+}
+
+class BankOfBoroda extends Atm{
+    @Override
+    void voiceAssistant() {
+        System.out.println("Welcome BankOfBoroda ");
+    }
+}

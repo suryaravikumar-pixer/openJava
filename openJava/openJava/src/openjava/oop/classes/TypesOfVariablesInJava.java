@@ -1,5 +1,5 @@
 package openjava.oop.classes;
-
+import imports_java.ExportClass;
 public class TypesOfVariablesInJava {
    /*** instance variables stays outside method and inside a method ***/
    String nameBikeModel;
@@ -37,5 +37,10 @@ public class TypesOfVariablesInJava {
    /*** object creation of a class ***/
    TypesOfVariablesInJava typesOfVariablesInJava = new TypesOfVariablesInJava();
 
+
+   public static void main(String[] args) {
+      ExportClass exportClass=new ExportClass();
+      System.out.println(exportClass.zipCode);
+   }
 
 }
