@@ -25,8 +25,11 @@ class CanWeDoOverLoadingFromAnotherClass extends MethodOverloading{
         CanWeDoOverLoadingFromAnotherClass can = new CanWeDoOverLoadingFromAnotherClass();
         MethodOverloading mo = new MethodOverloading();
         MethodOverloading jam = new CanWeDoOverLoadingFromAnotherClass();
+        MethodOverloading sam=new CanWeDoOverLoadingFromAnotherClass();
+
         jam.account(535,97);
         can.account(345,354);
+        sam.account();
 
 
 //        CanWeDoOverLoadingFromAnotherClass acc = new MethodOverloading();
