@@ -31,6 +31,7 @@ public class MethodOverridingClass {
 
 
 
+
     /****
      * 1.final and static
      * 2.constructor overriding is not allowed
